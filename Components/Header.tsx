@@ -2,11 +2,11 @@ import { links } from "@/constants"
 
 const Header = () => {
 
-    return <nav className="mt-2 flex-between center-element max-sm:hidden">
+    return <nav className="fixed w-[90%] backdrop-blur-md left-1/2 -translate-x-1/2 mt-2 flex-between center-element max-sm:hidden">
         <div>
-            <a href="#" className="text-[30px] font-bold text-dark-2 text-shadow-logo">A_Techpro_C</a>
+            <a href="#" className="text-[30px] font-bold text-white text-shadow-logo">A_Techpro_C</a>
         </div>
-        <ul className="gap-5 font-semibold flex-between text-md">
+        <ul className="gap-5 px-4 py-1 font-semibold border-2 rounded-md flex-between text-md shadow-light">
             {
                 links.map(({name, href}) => {
                     return <li key={name}>

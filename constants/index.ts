@@ -1,4 +1,10 @@
 
+import atechpro from "../public/A_Techpro_C.jpg";
+
+export const assets = {
+    atechpro,
+}
+
 interface LinksProps {
     name: string;
     href: string;
