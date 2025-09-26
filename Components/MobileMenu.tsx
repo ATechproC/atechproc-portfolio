@@ -15,7 +15,7 @@ const MobileMenu = () => {
         className={cn('fixed top-0 left-0 hidden w-full h-screen',
             isMobileMenuOpen && "block"
         )} />
-        <div className="fixed z-20 w-full px-3 py-2 md:hidden">
+        <div className="fixed z-20 w-full px-3 py-2 md:hidden backdrop-blur-md">
             <div className='flex-between'>
                 <a href="#" className="text-[20px] font-bold text-white text-shadow-logo">A_Techpro_C</a>
                 <FaBars

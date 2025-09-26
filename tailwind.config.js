@@ -21,12 +21,14 @@ module.exports = {
         "360" : "360deg",
       },
       textShadow: {
-        logo: "0 0px 5px white",
-        logoMobile: "0 0px 10px white",
+        "logo": "0 0px 5px white",
+        "logoMobile": "0 0px 10px white",
+        "dev" : "0 0px 10px #793aff",
       },
       boxShadow: {
-        light: "0 0 5px white",
-        line: "0 0px 10px #793aff",
+        "light": "0 0 5px white",
+        "line": "0 0px 10px #793aff",
+        "image": "0 0px 30px #793aff",
       },
     },
   },

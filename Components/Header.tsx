@@ -15,7 +15,7 @@ const Header = () => {
                 })
             }
         </ul>
-        <button className="px-3 py-1 font-semibold transition-colors rounded-md bg-dark-2 hover:bg-[rgba(121,58,288,.9)]">
+        <button className="px-3 py-1 transition-colors rounded-md bg-white text-dark-2 hover:text-white font-bold hover:bg-[rgba(121,58,288,.9)]">
             Contact
         </button>
     </nav>

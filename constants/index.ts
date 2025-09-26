@@ -1,5 +1,6 @@
 
-import atechpro from "../public/A_Techpro_C.jpg";
+// import atechpro from "../public/A_Techpro_C.jpg";
+import atechpro from "../public/A_Techpro_C.png";
 
 export const assets = {
     atechpro,
