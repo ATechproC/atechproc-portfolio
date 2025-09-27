@@ -14,14 +14,17 @@ module.exports = {
           1: "#04071D",
           2: "#793aff",
           3: "rgba(0,0,0,0.4)",
-          4: "#d1d5db"
+          4: "#d1d5db",
         },
+        main : {
+          "card" : "#1B1E27",
+        }
       },
       rotate : {
         "360" : "360deg",
       },
       textShadow: {
-        "logo": "0 0px 5px white",
+        "logo": "0 0px 5px #793aff",
         "logoMobile": "0 0px 10px white",
         "dev" : "0 0px 10px #793aff",
       },

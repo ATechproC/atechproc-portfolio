@@ -17,17 +17,17 @@ const MobileMenu = () => {
         )} />
         <div className="fixed z-20 w-full px-3 py-2 md:hidden backdrop-blur-md">
             <div className='flex-between'>
-                <a href="#" className="text-[20px] font-bold text-white text-shadow-logo">A_Techpro_C</a>
+                <a href="#" className="text-[20px] font-bold text-dark-2 text-shadow-logo">A_Techpro_C</a>
                 <FaBars
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    className='text-white transition-colors' />
+                    className='transition-colors cursor-pointer text-dark-2' />
             </div>
                 <ul className={` ${isMobileMenuOpen ? "open": "close" } fixed top-0 flex flex-col h-screen gap-3 p-3 font-semibold text-center bg-dark-2 min-w-[200px]`}>
                     <div className='w-full flex-between'>
                     <a href="#" className="font-bold text-white text-md text-shadow-logoMobile">A_Techpro_C</a>
                     <FaTimes
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    className='text-white' />
+                    className='text-white cursor-pointer' />
                     </div>
                     {
                         links.map(({ name, href }) => {

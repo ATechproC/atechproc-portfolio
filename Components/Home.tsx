@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaArrowRight } from 'react-icons/fa';
 
 const Home = () => {
 
-    return <div className='w-[90%] mx-auto my-10 md:mt-20 p-10 flex-between max-sm:flex-col-reverse max-sm:text-center'>
+    return <div id="home" className='p-10 center-element md:mt-20 flex-between max-sm:flex-col-reverse max-sm:text-center scroll-mt-20'>
         <div className='md:w-[60%] flex flex-col gap-3'>
             <p className='text-[30px] font-semibold max-sm:text-[20px] whitespace-nowrap'>Hello! I'm <span className='text-dark-2'>Anass Choraichi</span> 👋</p>
             <p className='relative max-sm:mx-auto text-[25px] max-sm:text-[20px] whitespace-nowrap text-center text-dark-2 w-fit text-shadow-dev'>
@@ -25,10 +25,10 @@ const Home = () => {
                 and visualize data. Always eager to pick up new tech and take on challenges.
             </p>
             <div className='gap-3 mt-3 max-sm:mx-auto flex-items max-sm:w-fit'>
-                <a href='https://github.com/ATechproC' className='w-[40px] h-[40px] bg-dark-2 group hover:bg-white  flex-center rounded-md transition duration-300 hover:rotate-360'>
+                <a target="_blank" href='https://github.com/ATechproC' className='w-[40px] h-[40px] bg-dark-2 group hover:bg-white  flex-center rounded-md transition duration-300 hover:rotate-360'>
                     <FaGithub className='text-[25px]  text-white group-hover:text-dark-2 transition duration-300' />
                 </a>
-                <a href='https://www.linkedin.com/in/anass-choraichi-80a403267/' className='w-[40px] h-[40px] group  transition duration-300 hover:bg-white bg-dark-2 flex-center rounded-md hover:rotate-360'>
+                <a target="_blank" href='https://www.linkedin.com/in/anass-choraichi-80a403267/' className='w-[40px] h-[40px] group  transition duration-300 hover:bg-white bg-dark-2 flex-center rounded-md hover:rotate-360'>
                     <FaLinkedin className='text-[25px]  text-white group-hover:text-dark-2  transition  duration-300' />
                 </a>
             </div>
