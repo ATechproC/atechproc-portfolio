@@ -12,7 +12,7 @@ interface ProjectsCardProps {
 const ProjectsCard = ({ project }: ProjectsCardProps) => {
 
     const { source, title, description, gitHub, demo } = project;
-    return <div className='relative rounded-md'>
+    return <div className='relative rounded-md group/parent'>
         <div className='w-[100%] h-[100%] rounded-md overflow-hidden'>
             <Image
                 src={source}
@@ -20,15 +20,15 @@ const ProjectsCard = ({ project }: ProjectsCardProps) => {
                 className='object-cover w-full h-full'
             />
         </div>
-        <div className='absolute top-0 left-0 w-full h-full p-5 bg-project'>
+        <div className='absolute top-0 left-0 w-full h-full p-5 transition duration-300 opacity-0 bg-project group-hover/parent:opacity-100'>
             <div className='relative -translate-y-1/2 top-1/2'>
                 <p className='md:text-[40px] text-dark-2 font-bold max-sm:text-[25px]'> {title} </p>
                 <p className='font-semibold md:text-[20px] text-white max-sm:text-[17px]'>
                     {description}
                 </p>
-                <div className='gap-3 mt-4 flex-items'>
+                <div className='hidden gap-3 mt-4 flex-items group-hover/parent:flex'>
                     <a target="_blank" href={gitHub} className='w-[40px] h-[40px] bg-dark-2 group hover:bg-white  flex-center rounded-md transition duration-300'>
-                        <FaGithub className='text-[25px]  text-white group-hover:text-dark-2 transition duration-300' />
+                        <FaGithub className='text-[25px] text-white group-hover:text-dark-2  transition duration-300' />
                     </a>
                     <a target="_blank" href={demo} className='w-[40px] h-[40px] group  transition duration-300 hover:bg-white bg-dark-2 flex-center rounded-md'>
                         <FaLink className='text-[25px]  text-white group-hover:text-dark-2  transition  duration-300' />
@@ -50,6 +50,7 @@ const Projects = () => {
                 projects.map((project, index) => <ProjectsCard project={project} key={index} />)
             }
         </div>
+        
     </div>
 }
 

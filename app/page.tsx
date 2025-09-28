@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, MobileMenu, Home, About, Projects, Resume } from "../Components/index";
+import { Header, MobileMenu, Home, About, Projects, Resume, Contact, Footer, TopScroller } from "../Components/index";
 
 const HomePage = () => {
     return (
@@ -10,6 +10,9 @@ const HomePage = () => {
             <About />
             <Resume />
             <Projects />
+            <Contact />
+            <Footer />
+            <TopScroller />
         </div>
     );
 };

@@ -15,6 +15,7 @@ module.exports = {
           2: "#793aff",
           3: "rgba(0,0,0,0.4)",
           4: "#d1d5db",
+          5 : "#793aff"
         },
         "project" : "rgba(0,0,0,0.8)",
         main : {

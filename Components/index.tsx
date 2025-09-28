@@ -5,6 +5,10 @@ import About from "./About";
 import SectionHeader from "./SectionHeader";
 import Projects from "./Projects";
 import Resume from "./Resume";
+import Contact from "./Contact";
+import ContactForm from "./ContactForm";
+import Footer from "./Footer";
+import TopScroller from './TopScroller'
 
 export {
     Header,
@@ -14,4 +18,8 @@ export {
     SectionHeader,
     Projects,
     Resume,
+    Contact,
+    ContactForm,
+    Footer,
+    TopScroller
 }

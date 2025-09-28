@@ -41,7 +41,7 @@ const Home = () => {
                 </button>
             </div>
         </div>
-        <div className='relative w-[250px] h-[250px] max-sm:mb-5'>
+        <div className='relative w-[250px] h-[250px] max-sm:mb-5 up-down'>
             <Image
                 src={assets.atechpro}
                 alt='A_Techpro_C'

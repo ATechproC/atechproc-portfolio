@@ -99,4 +99,20 @@
             top: -100%;
         }
     }
+
+    .up-down {
+        animation: upDown 1s ease infinite;
+    }
+
+    @keyframes upDown {
+        0% {
+            transform: translateY(-3px);
+        }
+        50% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-3px);
+        }
+    }
 }
