@@ -19,65 +19,70 @@ import {
     SiOpenai,
     SiPostman,
     SiNpm,
-    SiShadcnui
+    SiShadcnui,
+    SiStreamlit,
+    SiClerk,
+    SiI18Next
 } from "react-icons/si";
 
-
 import { VscVscode } from "react-icons/vsc";
-
 
 interface GetIconsProps {
     iconName: string;
     size?: number;
-    color?: string;
     className?: string;
 }
 
 const GetIcons: React.FC<GetIconsProps> = ({
     iconName,
     size = 24,
-    color = "currentColor",
     className,
 }) => {
     switch (iconName) {
         case "tools":
-            return <FaTools size={size} color={color} />;
+            return <FaTools size={size} className={className} />;
         case "code":
-            return <FaCode size={size} color={color} />;
+            return <FaCode size={size} className={className} />;
         case "graduation":
-            return <FaGraduationCap size={size} color={color} />;
+            return <FaGraduationCap size={size} className={className} />;
         case "html5":
-            return <FaHtml5 size={size} color={color} className={className} />;
+            return <FaHtml5 size={size} className={className} />;
         case "css3":
-            return <FaCss3Alt size={size} color={color} className={className} />;
+            return <FaCss3Alt size={size} className={className} />;
         case "javascript":
-            return <SiJavascript size={size} color={color} className={className} />;
+            return <SiJavascript size={size} className={className} />;
         case "typescript":
-            return <SiTypescript size={size} color={color} className={className} />;
+            return <SiTypescript size={size} className={className} />;
         case "react":
-            return <FaReact size={size} color={color}  className={className}/>;
+            return <FaReact size={size} className={className} />;
         case "nextdotjs":
-            return <SiNextdotjs size={size} color={color} className={className} />;
+            return <SiNextdotjs size={size} className={className} />;
         case "tailwindcss":
-            return <SiTailwindcss size={size} color={color}  className={className}/>;
+            return <SiTailwindcss size={size} className={className} />;
         case "shadcn":
-            return <SiShadcnui size={size} color={color}  className={className}/>;
-        case "git":
-            return <FaGitAlt size={size} color={color} />;
+            return <SiShadcnui size={size} className={className} />;
+        case "clerk":
+            return <SiClerk size={size} className={className} />;
+        case "getstream":
+            return <SiStreamlit size={size} className={className} />;
+        case "i18next":
+            return <SiI18Next size={size} className={className} />;
+        case "git": 
+            return <FaGitAlt size={size} className={className} />;
         case "github":
-            return <FaGithub size={size} color={color} />;
+            return <FaGithub size={size} className={className} />;
         case "vscode":
-            return <VscVscode size={size} color={color} />;
+            return <VscVscode size={size} className={className} />;
         case "figma":
-            return <SiFigma size={size} color={color} />;
+            return <SiFigma size={size} className={className} />;
         case "vite":
-            return <SiVite size={size} color={color} />;
+            return <SiVite size={size} className={className} />;
         case "chatgpt":
-            return <SiOpenai size={size} color={color} />;
+            return <SiOpenai size={size} className={className} />;
         case "postman":
-            return <SiPostman size={size} color={color} />;
+            return <SiPostman size={size} className={className} />;
         case "npm":
-            return <SiNpm size={size} color={color} />;
+            return <SiNpm size={size} className={className} />;
         default:
             return null;
     }

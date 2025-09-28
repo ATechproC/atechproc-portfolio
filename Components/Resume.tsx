@@ -72,7 +72,7 @@ const Resume = () => {
         // setIsLoading(true)
     }
 
-    return <div id='resume' className='flex flex-col gap-3 pt-20 pb-16 center-element'>
+    return <div id='resume' className='flex flex-col gap-3 py-20 center-element scroll-mt-7'>
         <SectionHeader
             title='Resume'
             description='My technical toolkit, development workflow, and learning journey' />
@@ -87,8 +87,8 @@ const Resume = () => {
                                 isSelected && "bg-dark-2"
                             )}>
                             <div className='md:w-[80%] flex-between mx-auto'>
-                                <GetIcons iconName={icon_name} />
-                                <p className='text-[20px] w-[80%] text-center max-sm:hidden'> {type} </p>
+                                <GetIcons iconName={icon_name} className='text-white' />
+                                <p className='text-[20px] w-[80%] text-center max-sm:hidden text-white'> {type} </p>
                             </div>
                         </div>
                     })
@@ -101,9 +101,9 @@ const Resume = () => {
                         category.map(({ id, icon_name, name }) => {
                             return <div key={id} className='relative flex gap-2 px-4 py-[15px] rounded-md flex-center bg-main-card bg-red-items border border-dark-2 group hover:bg-dark-2 cursor-pointer transition duration-300 m'>
                                 <div className='absolute p-2 transition duration-300 -translate-y-1/2 rounded-md top-1/2 -left-4 bg-dark-2 group-hover:text-dark-2 group-hover:bg-main-card'>
-                                    <GetIcons iconName={icon_name} size={20} />
+                                    <GetIcons iconName={icon_name} size={20} className='text-white' />
                                 </div>
-                                <p> {name} </p>
+                                <p className='text-white'> {name} </p>
                             </div>
                         })
                     }
@@ -115,7 +115,7 @@ const Resume = () => {
                         <div className='p-2 rounded-md bg-dark-2'>
                             <FaBookOpen size={20} className='text-white' />
                         </div>
-                        <p className='text-xl font-bold'>Education</p>
+                        <p className='text-xl font-bold text-white'>Education</p>
                     </div>
                     <div className='gap-2 flex-items max-sm:flex-col max-sm:gap-3'>
                         <Education
@@ -127,7 +127,7 @@ const Resume = () => {
                         <Education
                             title='Self-Improvement Web Development'
                             period='2023 | present'
-                            description='Self-taught in modern web technologies including React, Next.js,
+                            description='Self-learning modern web technologies including React, Next.js,
                             and TailwindCSS. Building full-stack applications to complement.'
                         />
                     </div>

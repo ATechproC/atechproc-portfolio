@@ -20,7 +20,8 @@ module.exports = {
         "project" : "rgba(0,0,0,0.8)",
         main : {
           "card" : "#1B1E27",
-        }
+        },
+        "main-light" : "#0d1117",
       },
       rotate : {
         "360" : "360deg",
@@ -29,6 +30,7 @@ module.exports = {
         "logo": "0 0px 5px #793aff",
         "logoMobile": "0 0px 10px white",
         "text_modal": "0 0px 3px white",
+        "nav_logo": "0 0px 5px white",
         "dev" : "0 0px 10px #793aff",
       },
       boxShadow: {

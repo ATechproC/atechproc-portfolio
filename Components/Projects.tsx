@@ -23,7 +23,7 @@ const ProjectsCard = ({ project }: ProjectsCardProps) => {
                     className="object-cover w-full h-full"
                 />
             </div>
-            <div className="absolute top-0 left-0 w-full h-full p-5 transition duration-300 opacity-0 bg-project group-hover/parent:opacity-100">
+            <div className="absolute top-0 left-0 w-full h-full p-5 transition duration-300 rounded-md opacity-0 bg-project group-hover/parent:opacity-100">
                 <div className="relative -translate-y-1/2 top-1/2">
                     <p className="md:text-[40px] text-dark-2 font-bold max-sm:text-[25px]">
                         {" "}
@@ -64,7 +64,7 @@ const Projects = () => {
     return (
         <div id="projects" className="pb-20 center-element scroll-mt-16">
             <SectionHeader title="Projects" />
-            <div className="grid gap-4 md:grid-cols-2 max-sm:grid-col-1 md:mt-10 max-sm:gap-8">
+            <div className="grid gap-4 mt-5 md:grid-cols-2 max-sm:grid-col-1 md:mt-7 max-sm:gap-8">
                 {projects.map((project, index) => (
                     <ProjectsCard project={project} key={index} />
                 ))}

@@ -8,6 +8,9 @@ import car from '../public/car.png';
 import multi_step_form from '../public/multiStep-form.jpg';
 import cec_website from '../public/cec-website.png';
 import restaurant from '../public/restaurant.png';
+import todo from "../public/todo_list2.jpg"
+import weatherApp from '../public/weather.png'
+import portfolio from "../public/ATechproC.png"
 
 
 export interface TechStackProps {
@@ -29,6 +32,23 @@ export interface ProjectsProps {
 export const projects: ProjectsProps[] = [
     {
         id: 1,
+        source: portfolio, // replace with your actual imported image
+        title: "ATechproC portfolio",
+        description: "Personal portfolio built with Next.js and TailwindCSS",
+        modal_desc:
+            "A modern personal portfolio showcasing my skills, projects, and resume. Built using Next.js, TypeScript, TailwindCSS, and shadcn/ui for reusable components. Features a responsive design, smooth navigation, and sections such as About Me, Resume, Projects, and Contact. Includes theme customization, social media integration, and a professional presentation of my work.",
+        gitHub: "https://github.com/ATechproC/atechproc-portfolio", // update with your actual repo
+        demo: "https://portfolio-demo.vercel.app/", // update with your deployed demo link
+        techStack: [
+            { id: 1, name: "nextdotjs" },
+            { id: 2, name: "typescript" },
+            { id: 3, name: "tailwindcss" },
+            { id: 4, name: "shadcn" },
+        ],
+    },
+
+    {
+        id: 2,
         source: cec_website,
         title: "CEC Website",
         description: "Computer Engineering Club",
@@ -44,7 +64,7 @@ export const projects: ProjectsProps[] = [
         ],
     },
     {
-        id: 2,
+        id: 3,
         source: zoom,
         title: "Zoom App",
         description: "Real-time video communication platform",
@@ -61,7 +81,7 @@ export const projects: ProjectsProps[] = [
         ],
     },
     {
-        id: 3,
+        id: 4,
         source: liveDocs,
         title: "Live Documents",
         description: "Real-time collaborative document editor",
@@ -79,7 +99,7 @@ export const projects: ProjectsProps[] = [
         ],
     },
     {
-        id: 4,
+        id: 5,
         source: dashboard,
         title: "Dashboard Admin",
         description: "Data visualization admin panel",
@@ -94,7 +114,7 @@ export const projects: ProjectsProps[] = [
         ],
     },
     {
-        id: 5,
+        id: 6,
         source: car,
         title: "CarHub",
         description: "Car marketplace discovery platform",
@@ -109,7 +129,7 @@ export const projects: ProjectsProps[] = [
         ],
     },
     {
-        id: 6,
+        id: 7,
         source: multi_step_form,
         title: "FormFlow Wizard",
         description: "Multi-step form wizard",
@@ -124,7 +144,7 @@ export const projects: ProjectsProps[] = [
         ],
     },
     {
-        id: 7,
+        id: 8,
         source: restaurant,
         title: "Restaurant Ovibes",
         description: "Restaurant Ovibes - Best In The City",
@@ -137,5 +157,35 @@ export const projects: ProjectsProps[] = [
             { id: 2, name: "css3" },
         ],
     },
+    {
+        id: 9,
+        source: todo, // replace with your actual imported image
+        title: "Todo List App",
+        description: "Task management application",
+        modal_desc:
+            "A simple and interactive Todo List application that allows users to add, edit, and delete tasks. Built with React for dynamic updates and CSS for styling, providing a clean and user-friendly task management experience.",
+        gitHub: "https://github.com/ATechproC/todo-list", // update with your actual repo link
+        demo: "https://dreamy-gumdrop-16ad08.netlify.app/", // update with your deployed demo link
+        techStack: [
+            { id: 1, name: "react" },
+            { id: 2, name: "css3" },
+        ],
+    },
+    {
+        id: 10,
+        source: weatherApp, // replace with your actual imported image
+        title: "Weather App",
+        description: "Real-time weather forecast application",
+        modal_desc:
+            "A weather application that fetches real-time data using an API request. Features multi-language support with i18n for English and Arabic, and allows users to select cities or countries to view localized forecasts. Displays current temperature, conditions, and min/max values with a clean and responsive UI.",
+        gitHub: "https://github.com/ATechproC/weather-app", // update with your actual repo
+        demo: "https://imaginative-stardust-3f59f0.netlify.app/", // update with your deployed demo link
+        techStack: [
+            { id: 1, name: "react" },
+            { id: 3, name: "tailwindcss" },
+            { id: 4, name: "i18next" },      // API integration (e.g., OpenWeatherMap)
+        ],
+    },
+
 ];
 

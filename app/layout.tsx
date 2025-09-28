@@ -3,6 +3,7 @@ import "./globals.css";
 import MobileMenuProvider from "@/providers/MobileMenuProvider";
 import LoaderProvider from "@/providers/LoaderProvider";
 import ModalProvider from "@/providers/ProjectModalProvider";
+import ThemeProvider from "@/providers/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "A_Techpro_C",
@@ -15,16 +16,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ModalProvider>
-      <LoaderProvider>
-        <MobileMenuProvider>
-          <html lang="en" style={{ scrollBehavior: "smooth" }}>
-            <body>
-              {children}
-            </body>
-          </html>
-        </MobileMenuProvider>
-      </LoaderProvider>
-    </ModalProvider>
+    <ThemeProvider>
+      <ModalProvider>
+        <LoaderProvider>
+          <MobileMenuProvider>
+            <html lang="en" style={{ scrollBehavior: "smooth" }}>
+              <body>
+                {children}
+              </body>
+            </html>
+          </MobileMenuProvider>
+        </LoaderProvider>
+      </ModalProvider>
+    </ThemeProvider>
   );
 }

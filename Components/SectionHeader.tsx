@@ -8,10 +8,10 @@ const SectionHeader = ({title, description} : SectionHeaderProps) => {
         <p className='text-dark-2 text-[30px] text-center font-semibold'> {title} </p>
         <div className='gap-1 -mt-1 text-center flex-center'>
             <div className='h-[3px] w-[50px] bg-dark-2 m' />
-            <FaStar className='text-white w-[20px] h-[20px] mb-[5px]' />
+            <FaStar className='dark:text-white text-dark-2 w-[20px] h-[20px] mb-[5px]' />
             <div className='h-[3px] w-[50px] bg-dark-2'/>
         </div>
-        <p className='text-sm font-semibold text-center md:text-[15px] text-dark-4'> {description} </p>
+        <p className='text-sm font-semibold text-center md:text-[15px] dark:text-dark-4 text-main-light'> {description} </p>
     </div>
 }
 

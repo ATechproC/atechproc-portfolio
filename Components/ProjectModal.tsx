@@ -20,7 +20,7 @@ const Modal = () => {
             className={cn('fixed hidden top-0 left-0 w-[100%] h-[100%] backdrop-blur-md',
                 isModalOpen && "block"
             )} />
-        <div className={cn('fixed -translate-x-1/2 hidden gap-5 -translate-y-1/2 left-1/2 top-1/2 w-[80%] bg-dark-2 p-4 rounded-md',
+        <div className={cn('fixed -translate-x-1/2 hidden gap-5 items-center -translate-y-1/2 left-1/2 top-1/2 w-[80%] bg-dark-2 p-4 rounded-md',
             isModalOpen && "flex max-sm:flex-col"
         )}>
             <FaTimes
