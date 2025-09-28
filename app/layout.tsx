@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import MobileMenuProvider from "@/providers/MobileMenuProvider";
 import LoaderProvider from "@/providers/LoaderProvider";
+import ModalProvider from "@/providers/ProjectModalProvider";
 
 export const metadata: Metadata = {
   title: "A_Techpro_C",
@@ -14,14 +15,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <LoaderProvider>
-      <MobileMenuProvider>
-        <html lang="en" style={{ scrollBehavior: "smooth" }}>
-          <body>
-            {children}
-          </body>
-        </html>
-      </MobileMenuProvider>
-    </LoaderProvider>
+    <ModalProvider>
+      <LoaderProvider>
+        <MobileMenuProvider>
+          <html lang="en" style={{ scrollBehavior: "smooth" }}>
+            <body>
+              {children}
+            </body>
+          </html>
+        </MobileMenuProvider>
+      </LoaderProvider>
+    </ModalProvider>
   );
 }

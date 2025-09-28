@@ -25,7 +25,7 @@ const Home = () => {
                 and visualize data. Always eager to pick up new tech and take on challenges.
             </p>
             <div className='gap-3 mt-3 max-sm:mx-auto flex-items max-sm:w-fit'>
-                <a target="_blank" href='https://github.com/ATechproC' className='w-[40px] h-[40px] bg-dark-2 group hover:bg-white  flex-center rounded-md transition duration-300 hover:rotate-360'>
+                <a target="_blank" href='https://github.com/ATechproC' className='w-[40px] h-[40px] bg-dark-2 group hover:bg-white flex-center rounded-md transition duration-300 hover:rotate-360'>
                     <FaGithub className='text-[25px]  text-white group-hover:text-dark-2 transition duration-300' />
                 </a>
                 <a target="_blank" href='https://www.linkedin.com/in/anass-choraichi-80a403267/' className='w-[40px] h-[40px] group  transition duration-300 hover:bg-white bg-dark-2 flex-center rounded-md hover:rotate-360'>

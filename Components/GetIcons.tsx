@@ -19,7 +19,9 @@ import {
     SiOpenai,
     SiPostman,
     SiNpm,
+    SiShadcnui
 } from "react-icons/si";
+
 
 import { VscVscode } from "react-icons/vsc";
 
@@ -28,34 +30,38 @@ interface GetIconsProps {
     iconName: string;
     size?: number;
     color?: string;
+    className?: string;
 }
 
 const GetIcons: React.FC<GetIconsProps> = ({
     iconName,
     size = 24,
     color = "currentColor",
+    className,
 }) => {
     switch (iconName) {
-            case "tools":
+        case "tools":
             return <FaTools size={size} color={color} />;
         case "code":
             return <FaCode size={size} color={color} />;
         case "graduation":
             return <FaGraduationCap size={size} color={color} />;
         case "html5":
-            return <FaHtml5 size={size} color={color} />;
+            return <FaHtml5 size={size} color={color} className={className} />;
         case "css3":
-            return <FaCss3Alt size={size} color={color} />;
+            return <FaCss3Alt size={size} color={color} className={className} />;
         case "javascript":
-            return <SiJavascript size={size} color={color} />;
+            return <SiJavascript size={size} color={color} className={className} />;
         case "typescript":
-            return <SiTypescript size={size} color={color} />;
+            return <SiTypescript size={size} color={color} className={className} />;
         case "react":
-            return <FaReact size={size} color={color} />;
+            return <FaReact size={size} color={color}  className={className}/>;
         case "nextdotjs":
-            return <SiNextdotjs size={size} color={color} />;
+            return <SiNextdotjs size={size} color={color} className={className} />;
         case "tailwindcss":
-            return <SiTailwindcss size={size} color={color} />;
+            return <SiTailwindcss size={size} color={color}  className={className}/>;
+        case "shadcn":
+            return <SiShadcnui size={size} color={color}  className={className}/>;
         case "git":
             return <FaGitAlt size={size} color={color} />;
         case "github":

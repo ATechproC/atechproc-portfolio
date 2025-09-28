@@ -28,6 +28,7 @@ module.exports = {
       textShadow: {
         "logo": "0 0px 5px #793aff",
         "logoMobile": "0 0px 10px white",
+        "text_modal": "0 0px 3px white",
         "dev" : "0 0px 10px #793aff",
       },
       boxShadow: {
