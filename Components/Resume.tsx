@@ -72,7 +72,7 @@ const Resume = () => {
         // setIsLoading(true)
     }
 
-    return <div id='resume' className='flex flex-col gap-3 pb-24 center-element'>
+    return <div id='resume' className='flex flex-col gap-3 pt-20 pb-16 center-element'>
         <SectionHeader
             title='Resume'
             description='My technical toolkit, development workflow, and learning journey' />

@@ -1,8 +1,55 @@
+
+import Image from 'next/image';
 import React from 'react'
+import SectionHeader from './SectionHeader';
+import { FaGithub, FaLink } from 'react-icons/fa6';
+import { projects, ProjectsProps } from '@/data';
+
+interface ProjectsCardProps {
+    project: ProjectsProps;
+}
+
+const ProjectsCard = ({ project }: ProjectsCardProps) => {
+
+    const { source, title, description, gitHub, demo } = project;
+    return <div className='relative rounded-md'>
+        <div className='w-[100%] h-[100%] rounded-md overflow-hidden'>
+            <Image
+                src={source}
+                alt={title}
+                className='object-cover w-full h-full'
+            />
+        </div>
+        <div className='absolute top-0 left-0 w-full h-full p-5 bg-project'>
+            <div className='relative -translate-y-1/2 top-1/2'>
+                <p className='md:text-[40px] text-dark-2 font-bold max-sm:text-[25px]'> {title} </p>
+                <p className='font-semibold md:text-[20px] text-white max-sm:text-[17px]'>
+                    {description}
+                </p>
+                <div className='gap-3 mt-4 flex-items'>
+                    <a target="_blank" href={gitHub} className='w-[40px] h-[40px] bg-dark-2 group hover:bg-white  flex-center rounded-md transition duration-300'>
+                        <FaGithub className='text-[25px]  text-white group-hover:text-dark-2 transition duration-300' />
+                    </a>
+                    <a target="_blank" href={demo} className='w-[40px] h-[40px] group  transition duration-300 hover:bg-white bg-dark-2 flex-center rounded-md'>
+                        <FaLink className='text-[25px]  text-white group-hover:text-dark-2  transition  duration-300' />
+                    </a>
+                </div>
+                <button className='py-1 px-2 rounded-md text-white text-[15px] md:mt-7 mt-5 bg-dark-2 font-semibold hover:bg-white hover:text-dark-2 transition duration-300'>More Info</button>
+            </div>
+        </div>
+    </div>;
+}
 
 const Projects = () => {
-    return <div id='projects' className='center-element'>
-
+    return <div id='projects' className='pb-20 center-element scroll-mt-16'>
+        <SectionHeader
+            title='Projects'
+        />
+        <div className='grid gap-4 md:grid-cols-2 max-sm:grid-col-1 md:mt-10 max-sm:gap-8'>
+            {
+                projects.map((project, index) => <ProjectsCard project={project} key={index} />)
+            }
+        </div>
     </div>
 }
 

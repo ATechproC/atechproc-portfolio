@@ -16,6 +16,7 @@ module.exports = {
           3: "rgba(0,0,0,0.4)",
           4: "#d1d5db",
         },
+        "project" : "rgba(0,0,0,0.8)",
         main : {
           "card" : "#1B1E27",
         }

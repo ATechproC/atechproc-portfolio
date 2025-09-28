@@ -1,7 +1,9 @@
 import React from 'react'
 import { FaStar } from "react-icons/fa6";
 
-const SectionHeader = ({title, description} : {title: string; description: string}) => {
+interface SectionHeaderProps {title: string; description?: string}
+
+const SectionHeader = ({title, description} : SectionHeaderProps) => {
     return <div className='mx-auto w-fit'>
         <p className='text-dark-2 text-[30px] text-center font-semibold'> {title} </p>
         <div className='gap-1 -mt-1 text-center flex-center'>

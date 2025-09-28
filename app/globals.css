@@ -73,4 +73,30 @@
             transform: rotate(360deg);
         }
     }
+
+    .toBottom {
+        animation: toBottom 1s ease backwards;
+    }
+
+    @keyframes toBottom {
+        0% {
+            top: -100%;
+        }
+        100% {
+            top: 0;
+        }
+    }
+    
+    .toTop {
+        animation: toTop 1s ease backwards;
+    }
+
+    @keyframes toTop {
+        0% {
+            top: 0;
+        }
+        100% {
+            top: -100%;
+        }
+    }
 }

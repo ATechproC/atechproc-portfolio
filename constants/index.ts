@@ -1,11 +1,14 @@
 
-// import atechpro from "../public/A_Techpro_C.jpg";
 import atechpro from "../public/A_Techpro_C.png";
 import spinner from "../public/spinner.svg";
+import multiStep_form from "../public/multiStep-form.jpg"
+import liveDocs from "../public/LiveDocs.jpg"
 
 export const assets = {
     atechpro,
-    spinner
+    spinner,
+    multiStep_form,
+    liveDocs,
 }
 
 export interface LinksProps {
