@@ -1,7 +1,8 @@
 "use client";
 
-import { colors, ColorsProps } from '@/constants';
+import { colors, } from '@/constants';
 import { useColorPicker } from '@/providers/ColorPickerProvider';
+import { ColorsProps } from '@/types';
 import React, { useEffect, useState } from 'react'
 import { FaTimes } from 'react-icons/fa'
 import { FaCheck } from 'react-icons/fa6';
@@ -34,9 +35,6 @@ const ColorPicker = () => {
     if (isColorPickerOpen)
 
         return <>
-        {/* <div
-        onClick={() => setIsColorPickerOpen(false)}
-        className='fixed top-0 left-0 w-screen h-screen ' /> */}
         <div className='fixed z-50 p-3 rounded-md max-sm:dark:right-20 max-sm:top-12 dark:right-48 top-16 right-52 dark:bg-white bg-main-card '>
             <FaTimes
                 onClick={() => setIsColorPickerOpen(!isColorPickerOpen)}

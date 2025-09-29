@@ -1,13 +1,9 @@
 "use client";
 
+import { ThemeProps } from '@/types';
 import React, { useContext, useState } from 'react'
 
 import { createContext } from 'react';
-
-interface ThemeProps {
-    isDark : boolean;
-    setIsDark : React.Dispatch<React.SetStateAction<boolean>>
-}
 
 const ThemeContext = createContext({} as ThemeProps);
 

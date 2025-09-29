@@ -1,12 +1,8 @@
 "use client";
 
+import { MobileMenuProps } from '@/types';
 import React, { useContext, useState } from 'react'
 import { createContext } from 'react';
-
-interface MobileMenuProps {
-    isMobileMenuOpen : boolean;
-    setIsMobileMenuOpen : React.Dispatch<React.SetStateAction<boolean>>
-}
 
 const MobileMenuContext = createContext({} as MobileMenuProps)
 

@@ -59,8 +59,8 @@ const Home = () => {
                     View My Work <FaArrowRight className='mt-[2px]' />
                 </button>
                 <button
-                    style={{ color: pickedColor }}
-                    className='flex gap-2 px-3 py-2 text-[15px] font-bold bg-white rounded-xl flex-items hover:shadow-[0_0_3px_#fff] transition duration-200 max-sm:px-7'>
+                    style={{ color: isDark ? pickedColor : "#fff", backgroundColor : !isDark ? pickedColor : "#fff"}}
+                    className='flex gap-2 px-3 py-2 text-[15px] font-bold rounded-xl flex-items hover:shadow-[0_0_3px_#fff] transition duration-200 max-sm:px-7'>
                     Contact Me
                 </button>
             </div>

@@ -1,14 +1,14 @@
 "use client";
 
-import { assets, links } from "@/constants"
+import { assets } from "@/constants"
 import { cn } from "@/lib/utils";
 import { useTheme } from "@/providers/ThemeProvider";
 import Image from "next/image";
-import { useEffect, useReducer, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { IoColorPaletteSharp } from "react-icons/io5";
 import { useColorPicker } from "@/providers/ColorPickerProvider";
-import linksReducer from "@/reducers/linksReducer";
+import { useLinksState } from "@/providers/LinksStateProvider";
 
 
 const Header = () => {
@@ -19,42 +19,15 @@ const Header = () => {
 
     const [isButtonContactHovered, setIsButtonContactHovered] = useState<boolean>(false);
 
-
-    // const [linksState, setLinksState] = useState<LinksProps[]>(links);
-
-    const [linksState, dispatchLinksState] = useReducer(linksReducer, links)
-
     const { isDark, setIsDark } = useTheme();
 
-    const handleClickedLink = (id: number) => {
-        // const newLinksState = [...linksState];
-        // for (let i = 0; i < newLinksState.length; i++) {
-        //     if (newLinksState[i].id === id) {
-        //         newLinksState[i].isClicked = true;
-        //     } else {
-        //         newLinksState[i].isClicked = false;
-        //     }
-        // }
-        // setLinksState(newLinksState);
+    const {linksState, dispatchLinksState} = useLinksState();
 
+    const handleClickedLink = (id: number) => {
         dispatchLinksState({type : "linkClicked", payload : {id}})
     }
 
     const whileMouseHovered = (id: number, type: "enter" | "leave") => {
-        // const newLinksHovered = [...linksState];
-        // for (let i = 0; i < newLinksHovered.length; i++) {
-        //     if (type === "enter") {
-        //         if (newLinksHovered[i].id === id) {
-        //             newLinksHovered[i].isHovered = true;
-        //         } else {
-        //             newLinksHovered[i].isHovered = false;
-        //         }
-        //     }else {
-        //         newLinksHovered[i].isHovered = false;
-        //     }
-        // }
-        // setLinksState(newLinksHovered);
-
         dispatchLinksState({type : "linkHovered", payload : {type, id}})
     }
 
@@ -65,7 +38,7 @@ const Header = () => {
             document.body.style.color = "#fff"
         } else {
             document.documentElement.classList.remove("dark");
-            document.body.style.backgroundColor = "#e5e7eb";
+            document.body.style.backgroundColor = "#fff";
             document.body.style.color = "#0d1117"
         }
     }, [isDark])

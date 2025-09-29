@@ -1,6 +1,6 @@
 import { LinksProps } from '@/constants';
 
-const linksReducer = (currentState: LinksProps[], action: any) => {
+const linksReducer = (currentState: LinksProps[], action: { type : string, payload : {id : number, type : string}}) => {
 
     const { type, payload } = action;
 
@@ -34,7 +34,7 @@ const linksReducer = (currentState: LinksProps[], action: any) => {
             return newLinksHovered;
         }
 
-        default : throw Error("unknown action : ", type)
+        default : throw Error("unknown action : " + type)
     }
 }
 

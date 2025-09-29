@@ -2,11 +2,12 @@
 
 import SectionHeader from './SectionHeader'
 import GetIcons from './GetIcons';
-import { CategoryProps, categorySkills, skills, SkillsProps, tools } from '@/constants';
+import { categorySkills, skills, tools } from '@/constants';
 import { FaBookOpen } from "react-icons/fa6";
-import { cn } from '@/lib/utils';
-import { useEffect, useState } from 'react';
+import { useEffect, useReducer, useState } from 'react';
 import { useColorPicker } from '@/providers/ColorPickerProvider';
+import selectedItemsReducer from '@/reducers/selectedItemsReducer';
+import { SkillsProps } from '@/types';
 
 interface EducationProps {
     title: string;
@@ -38,8 +39,6 @@ const Resume = () => {
 
     const { pickedColor } = useColorPicker();
 
-    const [selectedItems, setSelectedItems] = useState<CategoryProps[]>(categorySkills);
-
     const [categoryId, setCategoryId] = useState<number>(1);
 
     const [category, setCategory] = useState<SkillsProps[]>(skills);
@@ -54,19 +53,13 @@ const Resume = () => {
             default: setCategory(skills);
         }
 
-    }, [categoryId])
+    }, [categoryId]);
+
+    const [selectedItemsState, dispatchSelectItems] = useReducer(selectedItemsReducer, categorySkills)
 
     const handleClickedItems = (id: number) => {
-        const newSelectedItems = [...selectedItems];
-        for (let i = 0; i < newSelectedItems.length; i++) {
-            if (newSelectedItems[i].id === id) {
-                newSelectedItems[i].isSelected = true;
-            } else {
-                newSelectedItems[i].isSelected = false;
-            }
-        }
+        dispatchSelectItems({type : "selectedItem", payload : {id}})
         setCategoryId(id);
-        setSelectedItems(newSelectedItems);
     }
 
     const whileMouseHovered = (id : number, type : "enter" | "leave") => {
@@ -96,7 +89,7 @@ const Resume = () => {
                     style={{ backgroundColor: pickedColor }}
                     className='absolute right-0 top-0 w-[6px] h-[100%] rounded-md' />
                 {
-                    selectedItems.map(({ id, icon_name, type, isSelected }) => {
+                    selectedItemsState.map(({ id, icon_name, type, isSelected }) => {
                         return <div key={id}
                             onClick={() => handleClickedItems(id)}
                             style={{ backgroundColor: isSelected ? pickedColor : "transparent" }}

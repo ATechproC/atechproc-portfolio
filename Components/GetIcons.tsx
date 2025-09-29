@@ -1,4 +1,5 @@
 
+import { GetIconsProps } from "@/types";
 import React from "react";
 import {
     FaHtml5,
@@ -32,12 +33,7 @@ import {
 
 import { VscVscode } from "react-icons/vsc";
 
-interface GetIconsProps {
-    iconName: string;
-    size?: number;
-    className?: string;
-    style? : React.CSSProperties
-}
+
 
 const GetIcons: React.FC<GetIconsProps> = ({
     iconName,

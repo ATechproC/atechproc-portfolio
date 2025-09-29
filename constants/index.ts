@@ -3,6 +3,7 @@ import atechpro from "../public/A_Techpro_C.png";
 import spinner from "../public/spinner.svg";
 import moon_icon from '../public/moon.png'
 import sun_icon from '../public/sun_icon.png'
+import { CategoryProps, ColorsProps, HomeLinksProps, LinksProps, SkillsProps } from "@/types";
 
 
 export const assets = {
@@ -10,14 +11,6 @@ export const assets = {
     spinner,
     moon_icon,
     sun_icon,
-}
-
-export interface LinksProps {
-    id: number;
-    name: string;
-    href: string;
-    isClicked: boolean;
-    isHovered : boolean;
 }
 
 export const links: LinksProps[] = [
@@ -28,12 +21,6 @@ export const links: LinksProps[] = [
     { "id": 5, name: "Contact", href: "#contact", isClicked: false, isHovered : false },
 ]
 
-export interface SkillsProps {
-    id : number;
-    icon_name : string;
-    name : string;
-    isHovered: boolean;
-}
 
 export const skills : SkillsProps[] = [
     {
@@ -131,14 +118,6 @@ export const tools : SkillsProps[] = [
     },
 ];
 
-
-export interface CategoryProps {
-    id: number;
-    type: string;
-    icon_name: string;
-    isSelected: boolean;
-}
-
 export const categorySkills: CategoryProps[] = [
     {
         "id": 1,
@@ -160,29 +139,15 @@ export const categorySkills: CategoryProps[] = [
     },
 ]
 
-export interface ColorsProps {
-    id : number;
-    color : string;
-    isClicked : boolean;
-}
-
 export const colors  : ColorsProps[] = [
     { "id": 1, "color": "#793aff", isClicked : true },
     { "id": 2, "color": "#ff742e", isClicked : false },
     { "id": 3, "color": "#0e78f9", isClicked : false },
     { "id": 4, "color": "#32e6e2", isClicked : false },
-    // { "id": 5, "color": "#238636", isClicked : false },
     { "id": 6, "color": "#e91e63", isClicked : false },
-    // { "id": 7, "color": "#0feffd", isClicked : false },
     { "id": 8, "color": "#f05a22", isClicked : false },
     { "id": 9, "color": "#f9a90e", isClicked : false },
 ]
-
-export interface HomeLinksProps {
-    id : number;
-    iconName : string;
-    link : string;
-}
 
 export const homeLinks : HomeLinksProps[] = [
     {

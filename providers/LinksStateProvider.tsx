@@ -1,14 +1,10 @@
 "use client";
 
-import { links, LinksProps } from '@/constants'
+import { links,  } from '@/constants'
 import linksReducer from '@/reducers/linksReducer'
+import { LinksStateProviderProps } from '@/types';
 import React, { useContext, useReducer } from 'react'
 import { createContext } from 'react'
-
-interface LinksStateProviderProps {
-    linksState : LinksProps[];
-    dispatchLinksState: React.ActionDispatch<[action: any]>;
-}
 
 const LinksStateContext = createContext({} as LinksStateProviderProps)
 

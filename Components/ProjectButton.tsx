@@ -1,16 +1,9 @@
 "use client";
 
-import { TechStackProps } from "@/data";
 import { useColorPicker } from "@/providers/ColorPickerProvider";
 import { useModal } from "@/providers/ProjectModalProvider";
-import { StaticImageData } from "next/image";
+import { ProjectButtonProps } from "@/types";
 
-interface ProjectButtonProps {
-    title: string;
-    modalDesc : string;
-    source : StaticImageData
-    techStack : TechStackProps[];
-}
 
 const ProjectButton = ({title, modalDesc,source, techStack} : ProjectButtonProps) => {
 

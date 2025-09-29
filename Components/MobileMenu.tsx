@@ -1,12 +1,12 @@
 "use client";
 
-import { assets, links, LinksProps } from "@/constants";
+import { assets, links } from "@/constants";
 import { cn } from "@/lib/utils";
 import { useColorPicker } from "@/providers/ColorPickerProvider";
+import { useLinksState } from "@/providers/LinksStateProvider";
 import { useMobileMenu } from "@/providers/MobileMenuProvider";
 import { useTheme } from "@/providers/ThemeProvider";
 import Image from "next/image";
-import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import { IoColorPaletteSharp } from "react-icons/io5";
@@ -19,19 +19,10 @@ const MobileMenu = () => {
 
     const { isDark, setIsDark } = useTheme();
 
-    const [linksState, setLinksState] = useState<LinksProps[]>(links);
+    const {dispatchLinksState} = useLinksState();
 
     const handleClickedLink = (id: number) => {
-        // const newLinksState = [...linksState];
-        // for (let i = 0; i < newLinksState.length; i++) {
-        //     if (newLinksState[i].id === id) {
-        //         newLinksState[i].isClicked = true;
-        //     } else {
-        //         newLinksState[i].isClicked = false;
-        //     }
-        // }
-        // setLinksState(newLinksState);
-        ispatchLinksState({type : "linkClicked", payload : {id}})
+        dispatchLinksState({type : "linkClicked", payload : {id}})
     }
 
     return (

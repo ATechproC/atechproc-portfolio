@@ -2,10 +2,10 @@
 
 import { useColorPicker } from '@/providers/ColorPickerProvider';
 import { useTheme } from '@/providers/ThemeProvider';
+import { SectionHeaderProps } from '@/types';
 import React from 'react'
 import { FaStar } from "react-icons/fa6";
 
-interface SectionHeaderProps {title: string; description?: string}
 
 const SectionHeader = ({title, description} : SectionHeaderProps) => {
 

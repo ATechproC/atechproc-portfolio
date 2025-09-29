@@ -1,26 +1,8 @@
 "use client";
 
-import { TechStackProps } from "@/data";
+import { ModalProps, TechStackProps } from "@/types";
 import { StaticImageData } from "next/image";
-import { createContext, SetStateAction, useContext, useState } from "react";
-
-interface ModalProps {
-
-    isModalOpen: boolean;
-    setIsModalOpen: React.Dispatch<SetStateAction<boolean>>;
-
-    title: string;
-    setTitle: React.Dispatch<SetStateAction<string>>;
-
-    source : StaticImageData | null;
-    setSource : React.Dispatch<SetStateAction<StaticImageData | null>>;
-
-    modalDesc : string;
-    setModalDesc : React.Dispatch<SetStateAction<string>>;
-
-    techStack : TechStackProps[];
-    setTechStack : React.Dispatch<SetStateAction<TechStackProps[]>>;
-}
+import { createContext, useContext, useState } from "react";
 
 const ModalContext = createContext({} as ModalProps);
 

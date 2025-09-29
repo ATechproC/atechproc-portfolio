@@ -4,14 +4,11 @@ import Image from "next/image";
 import React from "react";
 import SectionHeader from "./SectionHeader";
 import { FaGithub, FaLink } from "react-icons/fa6";
-import { projects, ProjectsProps } from "@/data";
+import { projects } from "@/data";
 import Modal from "./ProjectModal";
 import ProjectButton from "./ProjectButton";
 import { useColorPicker } from "@/providers/ColorPickerProvider";
-
-interface ProjectsCardProps {
-    project: ProjectsProps;
-}
+import { ProjectsCardProps } from "@/types";
 
 const ProjectsCard = ({ project }: ProjectsCardProps) => {
 

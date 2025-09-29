@@ -12,23 +12,8 @@ import todo from "../public/todo_list2.jpg"
 import weatherApp from '../public/weather.png'
 import portfolio from "../public/ATechproC.png"
 import prayerTimeApp from "../public/time-prayers.png"
+import { ProjectsProps } from '@/types';
 
-
-export interface TechStackProps {
-    id: number;
-    name: string;
-}
-
-export interface ProjectsProps {
-    id: number;
-    source: StaticImageData;
-    title: string;
-    description: string;
-    gitHub: string;
-    demo: string;
-    modal_desc: string;
-    techStack: TechStackProps[];
-}
 
 export const projects: ProjectsProps[] = [
     {
