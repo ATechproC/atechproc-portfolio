@@ -4,11 +4,14 @@ import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
+import { useColorPicker } from "@/providers/ColorPickerProvider";
 
 const ContactForm = () => {
     const { register, reset, handleSubmit } = useForm();
     const [isSuccess, setIsSuccess] = useState(false);
     const [result, setResult] = useState<string | null>(null);
+
+    const {pickedColor} = useColorPicker();
 
     const accessKey = process.env.NEXT_PUBLIC_API_KEY; // Replace with your Web3Forms Access Key
 
@@ -30,7 +33,9 @@ const ContactForm = () => {
     });
 
     return (
-        <div className=" md:w-[50%] w-[100%] bg-dark-2">
+        <div
+        style={{backgroundColor : pickedColor}}
+        className=" md:w-[50%] w-[100%]">
             <h2 className="mb-5 text-2xl font-bold text-center text-white">Send a Message</h2>
 
             {/* ✅ handleSubmit(onSubmit) is required */}
@@ -43,7 +48,8 @@ const ContactForm = () => {
                         type="text"
                         id="name"
                         {...register("name", { required: true })}
-                        className="w-full px-4 py-3 font-medium transition-colors bg-white border rounded-lg text-dark-2 focus:outline-none focus:border-dark-2"
+                        style={{color : pickedColor}}
+                        className={`w-full px-4 py-3 font-medium transition-colors bg-white border rounded-lg focus:outline-none focus:border-[${pickedColor}]`}
                         placeholder="Your name"
                     />
                 </div>
@@ -56,7 +62,8 @@ const ContactForm = () => {
                         type="email"
                         id="email"
                         {...register("email", { required: true })}
-                        className="w-full px-4 py-3 font-medium transition-colors border rounded-lg text-dark-2 focus:outline-none focus:border-dark-2"
+                        style={{color : pickedColor}}
+                        className={`w-full px-4 py-3 font-medium transition-colors border rounded-lg focus:outline-none focus:border-[${pickedColor}]`}
                         placeholder="your.email@example.com"
                     />
                 </div>
@@ -69,14 +76,16 @@ const ContactForm = () => {
                         id="message"
                         rows={6}
                         {...register("message", { required: true })}
-                        className="w-full px-4 py-3 md:h-[120px] font-medium transition-colors border rounded-lg text-dark-2 focus:outline-none resize-vertical focus:border-dark-2"
+                        style={{color : pickedColor}}
+                        className={`w-full px-4 py-3 md:h-[120px] font-medium transition-colors border rounded-lg focus:outline-none resize-vertical focus:border-[${pickedColor}]`}
                         placeholder="Tell us more about your message..."
                     ></textarea>
                 </div>
 
                 <Button
                     type="submit"
-                    className="w-full py-3 text-lg font-semibold transition duration-300 bg-white text-dark-2 hover:shadow-light"
+                    style={{color : pickedColor}}
+                    className="w-full py-3 text-lg font-semibold transition duration-300 bg-white hover:shadow-light"
                 >
                     SEND MESSAGE
                 </Button>

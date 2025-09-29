@@ -12,7 +12,7 @@ module.exports = {
       colors: {
         dark: {
           1: "#04071D",
-          2: "#793aff",
+          // 2: "#793aff",
           3: "rgba(0,0,0,0.4)",
           4: "#d1d5db",
           5 : "#793aff"

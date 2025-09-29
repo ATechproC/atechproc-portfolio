@@ -11,6 +11,7 @@ import restaurant from '../public/restaurant.png';
 import todo from "../public/todo_list2.jpg"
 import weatherApp from '../public/weather.png'
 import portfolio from "../public/ATechproC.png"
+import prayerTimeApp from "../public/time-prayers.png"
 
 
 export interface TechStackProps {
@@ -157,35 +158,54 @@ export const projects: ProjectsProps[] = [
             { id: 2, name: "css3" },
         ],
     },
+    
     {
         id: 9,
-        source: todo, // replace with your actual imported image
-        title: "Todo List App",
-        description: "Task management application",
-        modal_desc:
-            "A simple and interactive Todo List application that allows users to add, edit, and delete tasks. Built with React for dynamic updates and CSS for styling, providing a clean and user-friendly task management experience.",
-        gitHub: "https://github.com/ATechproC/todo-list", // update with your actual repo link
-        demo: "https://dreamy-gumdrop-16ad08.netlify.app/", // update with your deployed demo link
-        techStack: [
-            { id: 1, name: "react" },
-            { id: 2, name: "css3" },
-        ],
-    },
-    {
-        id: 10,
-        source: weatherApp, // replace with your actual imported image
+        source: weatherApp, 
         title: "Weather App",
         description: "Real-time weather forecast application",
         modal_desc:
             "A weather application that fetches real-time data using an API request. Features multi-language support with i18n for English and Arabic, and allows users to select cities or countries to view localized forecasts. Displays current temperature, conditions, and min/max values with a clean and responsive UI.",
-        gitHub: "https://github.com/ATechproC/weather-app", // update with your actual repo
-        demo: "https://imaginative-stardust-3f59f0.netlify.app/", // update with your deployed demo link
+        gitHub: "https://github.com/ATechproC/weather-app", 
+        demo: "https://shimmering-donut-2ab533.netlify.app/", 
         techStack: [
             { id: 1, name: "react" },
             { id: 3, name: "tailwindcss" },
-            { id: 4, name: "i18next" },      // API integration (e.g., OpenWeatherMap)
+            { id: 4, name: "redux" }, 
+            { id: 5, name: "i18next" }, 
+            { id: 6, name: "axios" }, 
+            { id: 7, name: "mui" }, 
         ],
     },
-
+    {
+        id: 10,
+        source: todo, 
+        title: "Todo List App",
+        description: "Task management application",
+        modal_desc:
+            "A simple and interactive Todo List application that allows users to add, edit, and delete tasks. Built with React for dynamic updates and CSS for styling, providing a clean and user-friendly task management experience.",
+        gitHub: "https://github.com/ATechproC/todo-list", 
+        demo: "https://dreamy-gumdrop-16ad08.netlify.app/", 
+        techStack: [
+            { id: 1, name: "react" },
+            { id: 2, name: "css3" },
+            { id: 3, name: "mui" },
+        ],
+    },
+    {
+        id: 11,
+        source: prayerTimeApp, 
+        title: "Prayer Times App",
+        description: "Islamic prayer times application",
+        modal_desc: "A prayer times application that fetches real-time prayer schedules using API requests with Axios. Features city selection to display accurate prayer times for specific locations. Shows all daily prayers (Fajr, Sunrise, Dhuhr, Asr, Maghrib, Isha) with a clean, user-friendly interface and responsive design.",
+        gitHub: "https://github.com/ATechproC/time-prayers",
+        demo: "https://time-prayers.vercel.app/", 
+        techStack: [
+            { id: 1, name: "html5" },
+            { id: 2, name: "css3" },
+            { id: 3, name: "javascript" },
+            { id: 4, name: "axios" },
+        ],
+    }
 ];
 

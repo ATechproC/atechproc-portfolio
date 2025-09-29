@@ -1,5 +1,6 @@
 import React from "react";
 import { Header, MobileMenu, Home, About, Projects, Resume, Contact, Footer, TopScroller } from "../Components/index";
+import ColorPicker from "@/Components/ColorPicker";
 
 const HomePage = () => {
     return (
@@ -13,6 +14,7 @@ const HomePage = () => {
             <Contact />
             <Footer />
             <TopScroller />
+            <ColorPicker />
         </div>
     );
 };

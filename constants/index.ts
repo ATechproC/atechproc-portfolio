@@ -17,95 +17,117 @@ export interface LinksProps {
     name: string;
     href: string;
     isClicked: boolean;
+    isHovered : boolean;
 }
 
 export const links: LinksProps[] = [
-    { "id": 1, name: "Home", href: "#home", isClicked: true },
-    { "id": 2, name: "About", href: "#about", isClicked: false },
-    { "id": 3, name: "Resume", href: "#resume", isClicked: false },
-    { "id": 4, name: "Projects", href: "#projects", isClicked: false },
-    { "id": 5, name: "Contact", href: "#contact", isClicked: false },
+    { "id": 1, name: "Home", href: "#home", isClicked: true, isHovered : false },
+    { "id": 2, name: "About", href: "#about", isClicked: false, isHovered : false },
+    { "id": 3, name: "Resume", href: "#resume", isClicked: false, isHovered : false },
+    { "id": 4, name: "Projects", href: "#projects", isClicked: false, isHovered : false },
+    { "id": 5, name: "Contact", href: "#contact", isClicked: false, isHovered : false },
 ]
 
+export interface SkillsProps {
+    id : number;
+    icon_name : string;
+    name : string;
+    isHovered: boolean;
+}
 
-export const skills = [
+export const skills : SkillsProps[] = [
     {
         "id": 1,
         "icon_name": "html5",
-        "name": "HTML5"
+        "name": "HTML5",
+        "isHovered" : false
     },
     {
         "id": 2,
         "icon_name": "css3",
-        "name": "CSS3"
+        "name": "CSS3",
+        "isHovered" : false
     },
     {
         "id": 3,
         "icon_name": "javascript",
-        "name": "JavaScript"
+        "name": "JavaScript",
+        "isHovered" : false
     },
     {
         "id": 4,
         "icon_name": "typescript",
-        "name": "TypeScript"
+        "name": "TypeScript",
+        "isHovered" : false
     },
     {
         "id": 5,
         "icon_name": "react",
-        "name": "React.js"
+        "name": "React.js",
+        "isHovered" : false
     },
     {
         "id": 6,
         "icon_name": "nextdotjs",
-        "name": "Next.js"
+        "name": "Next.js",
+        "isHovered" : false
     },
     {
         "id": 7,
         "icon_name": "tailwindcss",
-        "name": "Tailwind CSS"
+        "name": "Tailwind CSS",
+        "isHovered" : false
     },
     {
         "id": 10,
         "icon_name": "git",
-        "name": "Git"
+        "name": "Git",
+        "isHovered" : false
     },
     {
         "id": 11,
         "icon_name": "github",
-        "name": "GitHub"
+        "name": "GitHub",
+        "isHovered" : false
     },
 ];
 
-export const tools = [
+export const tools : SkillsProps[] = [
     {
         "id": 1,
         "icon_name": "vscode",
-        "name": "VS Code"
+        "name": "VS Code",
+        "isHovered" : false
     },
     {
         "id": 2,
         "icon_name": "vite",
-        "name": "Vite"
+        "name": "Vite",
+        "isHovered" : false
     },
     {
         "id": 3,
         "icon_name": "chatgpt",
-        "name": "ChatGPT"
+        "name": "ChatGPT",
+        "isHovered" : false
     },
     {
         "id": 4,
         "icon_name": "postman",
-        "name": "Postman"
+        "name": "Postman",
+        "isHovered" : false
     },
     {
         "id": 5,
         "icon_name": "npm",
-        "name": "NPM"
+        "name": "NPM",
+        "isHovered" : false
     },
     {
         "id": 6,
         "icon_name": "figma",
-        "name": "Figma"
+        "name": "Figma",
+        "isHovered" : false
     },
 ];
 
@@ -136,4 +158,41 @@ export const categorySkills: CategoryProps[] = [
         "icon_name": "graduation",
         "isSelected": false,
     },
+]
+
+export interface ColorsProps {
+    id : number;
+    color : string;
+    isClicked : boolean;
+}
+
+export const colors  : ColorsProps[] = [
+    { "id": 1, "color": "#793aff", isClicked : true },
+    { "id": 2, "color": "#ff742e", isClicked : false },
+    { "id": 3, "color": "#0e78f9", isClicked : false },
+    { "id": 4, "color": "#32e6e2", isClicked : false },
+    // { "id": 5, "color": "#238636", isClicked : false },
+    { "id": 6, "color": "#e91e63", isClicked : false },
+    // { "id": 7, "color": "#0feffd", isClicked : false },
+    { "id": 8, "color": "#f05a22", isClicked : false },
+    { "id": 9, "color": "#f9a90e", isClicked : false },
+]
+
+export interface HomeLinksProps {
+    id : number;
+    iconName : string;
+    link : string;
+}
+
+export const homeLinks : HomeLinksProps[] = [
+    {
+        "id" : 1,
+        "iconName" : "github",
+        "link" : "https://github.com/ATechproC",
+    },
+    {
+        "id" : 2,
+        "iconName" : "linkedIn",
+        "link" : "https://www.linkedin.com/in/anass-choraichi-80a403267/",
+    }
 ]

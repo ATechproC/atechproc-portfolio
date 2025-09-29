@@ -4,6 +4,7 @@ import MobileMenuProvider from "@/providers/MobileMenuProvider";
 import LoaderProvider from "@/providers/LoaderProvider";
 import ModalProvider from "@/providers/ProjectModalProvider";
 import ThemeProvider from "@/providers/ThemeProvider";
+import ColorPickerProvider from "@/providers/ColorPickerProvider";
 
 export const metadata: Metadata = {
   title: "A_Techpro_C",
@@ -16,9 +17,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ThemeProvider>
-      <ModalProvider>
-        <LoaderProvider>
+    <ColorPickerProvider>
+      <ThemeProvider>
+        <ModalProvider>
           <MobileMenuProvider>
             <html lang="en" style={{ scrollBehavior: "smooth" }}>
               <body>
@@ -26,8 +27,8 @@ export default function RootLayout({
               </body>
             </html>
           </MobileMenuProvider>
-        </LoaderProvider>
-      </ModalProvider>
-    </ThemeProvider>
+        </ModalProvider>
+      </ThemeProvider>
+    </ColorPickerProvider>
   );
 }

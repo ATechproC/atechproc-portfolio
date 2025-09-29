@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import SectionHeader from "./SectionHeader";
@@ -5,12 +7,16 @@ import { FaGithub, FaLink } from "react-icons/fa6";
 import { projects, ProjectsProps } from "@/data";
 import Modal from "./ProjectModal";
 import ProjectButton from "./ProjectButton";
+import { useColorPicker } from "@/providers/ColorPickerProvider";
 
 interface ProjectsCardProps {
     project: ProjectsProps;
 }
 
 const ProjectsCard = ({ project }: ProjectsCardProps) => {
+
+    const {pickedColor} = useColorPicker();
+
     const { source, title, description, gitHub, demo, modal_desc, techStack } =
         project;
 
@@ -25,7 +31,9 @@ const ProjectsCard = ({ project }: ProjectsCardProps) => {
             </div>
             <div className="absolute top-0 left-0 w-full h-full p-5 transition duration-300 rounded-md opacity-0 bg-project group-hover/parent:opacity-100">
                 <div className="relative -translate-y-1/2 top-1/2">
-                    <p className="md:text-[40px] text-dark-2 font-bold max-sm:text-[25px]">
+                    <p 
+                    style={{color : pickedColor}}
+                    className="md:text-[40px] font-bold max-sm:text-[25px]">
                         {" "}
                         {title}{" "}
                     </p>
@@ -36,14 +44,16 @@ const ProjectsCard = ({ project }: ProjectsCardProps) => {
                         <a
                             target="_blank"
                             href={gitHub}
-                            className="w-[40px] h-[40px] bg-dark-2 group hover:bg-white  flex-center rounded-md transition duration-300"
+                            style={{backgroundColor : pickedColor}}
+                            className="w-[40px] h-[40px] group hover:bg-white  flex-center rounded-md transition duration-300"
                         >
                             <FaGithub className="text-[25px] text-white group-hover:text-dark-2  transition duration-300" />
                         </a>
                         <a
                             target="_blank"
                             href={demo}
-                            className="w-[40px] h-[40px] group  transition duration-300 hover:bg-white bg-dark-2 flex-center rounded-md"
+                            style={{backgroundColor : pickedColor}}
+                            className="w-[40px] h-[40px] group  transition duration-300 hover:bg-white flex-center rounded-md"
                         >
                             <FaLink className="text-[25px]  text-white group-hover:text-dark-2  transition  duration-300" />
                         </a>
