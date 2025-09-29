@@ -1,7 +1,16 @@
 "use client";
 
-import { ColorPickerProvider } from '@/types';
 import React, { createContext, useContext, useState }from 'react';
+
+export interface ColorPickerProvider {
+    
+    isColorPickerOpen : boolean;
+    setIsColorPickerOpen : React.Dispatch<React.SetStateAction<boolean>>;
+
+    pickedColor : string;
+    setPickedColor :  React.Dispatch<React.SetStateAction<string>>;
+
+}
 
 const ColorPickerContext = createContext({} as ColorPickerProvider)
 

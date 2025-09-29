@@ -71,16 +71,6 @@ export interface ProjectsProps {
     techStack: TechStackProps[];
 }
 
-export interface ColorPickerProvider {
-    
-    isColorPickerOpen : boolean;
-    setIsColorPickerOpen : React.Dispatch<React.SetStateAction<boolean>>;
-
-    pickedColor : string;
-    setPickedColor :  React.Dispatch<React.SetStateAction<string>>;
-
-}
-
 export interface LinksStateProviderProps {
     linksState : LinksProps[];
     dispatchLinksState: React.ActionDispatch<[action: any]>;
