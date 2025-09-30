@@ -21,7 +21,7 @@ export const projects: ProjectsProps[] = [
         modal_desc:
             "A modern personal portfolio showcasing my skills, projects, and resume. Built using Next.js, TypeScript, TailwindCSS, and shadcn/ui for reusable components. Features a responsive design, smooth navigation, and sections such as About Me, Resume, Projects, and Contact. Includes theme customization, social media integration, and a professional presentation of my work.",
         gitHub: "https://github.com/ATechproC/atechproc-portfolio", // update with your actual repo
-        demo: "https://portfolio-demo.vercel.app/", // update with your deployed demo link
+        demo: "https://atechproc-portfolio.vercel.app/", // update with your deployed demo link
         techStack: [
             { id: 1, name: "nextdotjs" },
             { id: 2, name: "typescript" },
