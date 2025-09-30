@@ -47,7 +47,7 @@ const Modal = () => {
                     <FaStar className='text-white w-[20px] h-[20px] mb-[5px]' />
                     <div className='h-[3px] w-[50px] bg-white' />
                 </div>
-                <p className='text-md text-dark-4'> {modalDesc} </p>
+                <p className='text-white text-md'> {modalDesc} </p>
                 <div className='gap-2 flex-items'> 
                     <span className='text-[20px] text-white font- max-sm:hidden'>Technologies : </span>
                     <div className='gap-3 flex-items'>

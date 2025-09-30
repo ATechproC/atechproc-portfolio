@@ -16,7 +16,7 @@ const ColorPickerContext = createContext({} as ColorPickerProvider)
 
 const ColorPickerProvider = ({ children } : {children : React.ReactNode}) => {
     
-    const [pickedColor, setPickedColor] = useState<string>("#793aff")
+    const [pickedColor, setPickedColor] = useState<string>("#32e6e2")
 
     const [isColorPickerOpen, setIsColorPickerOpen] = useState<boolean>(false)
 
