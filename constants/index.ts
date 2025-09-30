@@ -76,16 +76,9 @@ export const skills : SkillsProps[] = [
         "icon_name": "axios",
         "name": "Axios",
         "isHovered" : false,
-        "small_screen" : true
     },
     {
         "id": 10,
-        "icon_name": "framer",
-        "name": "Framer Motion",
-        "isHovered" : false
-    },
-    {
-        "id": 11,
         "icon_name": "framer",
         "name": "Framer Motion",
         "isHovered" : false
