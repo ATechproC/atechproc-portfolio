@@ -1,6 +1,6 @@
 import React from "react";
-import { Header, MobileMenu, Home, About, Projects, Resume, Contact, Footer, TopScroller } from "../Components/index";
-import ColorPicker from "@/Components/ColorPicker";
+import { Header, MobileMenu, Home, About, Projects, Resume, Contact, Footer, TopScroller } from "../components/index";
+import ColorPicker from "@/components/ColorPicker";
 
 const HomePage = () => {
     return (
