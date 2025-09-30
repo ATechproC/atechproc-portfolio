@@ -8,7 +8,8 @@ import Resume from "./Resume";
 import Contact from "./Contact";
 import ContactForm from "./ContactForm";
 import Footer from "./Footer";
-import TopScroller from './TopScroller'
+import TopScroller from './TopScroller';
+import ColorPicker from './ColorPicker';
 
 export {
     Header,
@@ -21,5 +22,6 @@ export {
     Contact,
     ContactForm,
     Footer,
-    TopScroller
+    TopScroller,
+    ColorPicker
 }

@@ -1,6 +1,3 @@
-import { StaticImageData } from 'next/image';
-
-
 import liveDocs from '../public/LiveDocs.jpg';
 import zoom from '../public/zoom.png';
 import dashboard from '../public/dashboard.png';
