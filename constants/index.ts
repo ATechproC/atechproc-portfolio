@@ -3,7 +3,7 @@ import atechpro from "../public/A_Techpro_C.png";
 import spinner from "../public/spinner.svg";
 import moon_icon from '../public/moon.png'
 import sun_icon from '../public/sun_icon.png'
-import { CategoryProps, ColorsProps, HomeLinksProps, LinksProps, SkillsProps } from "@/public/types";
+import { CategoryProps, ColorsProps, HomeLinksProps, LinksProps, SkillsProps } from "@/types";
 
 
 export const assets = {

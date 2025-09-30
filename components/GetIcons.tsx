@@ -1,5 +1,5 @@
 
-import { GetIconsProps } from "@/public/types";
+import { GetIconsProps } from "@/types";
 import React from "react";
 import {
     FaHtml5,

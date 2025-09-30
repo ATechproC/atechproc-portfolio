@@ -9,7 +9,7 @@ import todo from "../public/todo_list2.jpg"
 import weatherApp from '../public/weather.png'
 import portfolio from "../public/ATechproC.png"
 import prayerTimeApp from "../public/time-prayers.png"
-import { ProjectsProps } from '@/public/types';
+import { ProjectsProps } from '@/types';
 
 
 export const projects: ProjectsProps[] = [

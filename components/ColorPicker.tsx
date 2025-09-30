@@ -2,7 +2,7 @@
 
 import { colors, } from '@/constants';
 import { useColorPicker } from '@/providers/ColorPickerProvider';
-import { ColorsProps } from '@/public/types';
+import { ColorsProps } from '@/types';
 import React, { useEffect, useState } from 'react'
 import { FaTimes } from 'react-icons/fa'
 import { FaCheck } from 'react-icons/fa6';
