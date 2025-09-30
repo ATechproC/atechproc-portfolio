@@ -29,6 +29,8 @@ import {
     SiAxios,
     SiRedux,
     SiMui,
+    SiFramer,
+    SiVercel,
 } from "react-icons/si";
 
 import { VscVscode } from "react-icons/vsc";
@@ -41,12 +43,12 @@ const GetIcons: React.FC<GetIconsProps> = ({
     className,
     style,
 }) => {
-    
+
     switch (iconName) {
         case "tools":
             return <FaTools style={style} size={size} className={className} />;
         case "code":
-            return <FaCode  style={style}size={size} className={className} />;
+            return <FaCode style={style} size={size} className={className} />;
         case "graduation":
             return <FaGraduationCap style={style} size={size} className={className} />;
         case "html5":
@@ -63,6 +65,8 @@ const GetIcons: React.FC<GetIconsProps> = ({
             return <SiNextdotjs style={style} size={size} className={className} />;
         case "tailwindcss":
             return <SiTailwindcss style={style} size={size} className={className} />;
+        case "framer":
+            return <SiFramer style={style} size={size} className={className} />;
         case "shadcn":
             return <SiShadcnui style={style} size={size} className={className} />;
         case "clerk":
@@ -73,6 +77,8 @@ const GetIcons: React.FC<GetIconsProps> = ({
             return <SiI18Next style={style} size={size} className={className} />;
         case "redux":
             return <SiRedux style={style} size={size} className={className} />;
+        case "vercel":
+            return <SiVercel style={style} size={size} className={className} />;
         case "mui":
             return <SiMui style={style} size={size} className={className} />;
         case "axios":

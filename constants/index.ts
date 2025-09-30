@@ -73,18 +73,31 @@ export const skills : SkillsProps[] = [
     },
     {
         "id": 9,
-        "icon_name": "tailwindcss",
-        "name": "Tailwind CSS",
-        "isHovered" : false
+        "icon_name": "axios",
+        "name": "Axios",
+        "isHovered" : false,
+        "small_screen" : true
     },
     {
         "id": 10,
+        "icon_name": "framer",
+        "name": "Framer Motion",
+        "isHovered" : false
+    },
+    {
+        "id": 11,
+        "icon_name": "framer",
+        "name": "Framer Motion",
+        "isHovered" : false
+    },
+    {
+        "id": 12,
         "icon_name": "git",
         "name": "Git",
         "isHovered" : false
     },
     {
-        "id": 11,
+        "id": 13,
         "icon_name": "github",
         "name": "GitHub",
         "isHovered" : false
@@ -116,8 +129,15 @@ export const tools : SkillsProps[] = [
         "name": "NPM",
         "isHovered" : false
     },
+    
     {
         "id": 5,
+        "icon_name": "vercel",
+        "name": "Vercel ",
+        "isHovered" : false
+    },
+    {
+        "id": 6,
         "icon_name": "figma",
         "name": "Figma",
         "isHovered" : false

@@ -34,6 +34,7 @@ export interface SkillsProps {
     icon_name : string;
     name : string;
     isHovered: boolean;
+    small_screen? : boolean;
 }
 
 export interface CategoryProps {

@@ -8,6 +8,7 @@ import { useEffect, useReducer, useState } from 'react';
 import { useColorPicker } from '@/providers/ColorPickerProvider';
 import selectedItemsReducer from '@/reducers/selectedItemsReducer';
 import { SkillsProps } from '@/public/types';
+import { cn } from '@/lib/utils';
 
 interface EducationProps {
     title: string;
@@ -78,7 +79,7 @@ const Resume = () => {
         setCategory(newCategory)
     }
 
-    return <div id='resume' className='flex flex-col gap-3 py-20 center-element scroll-mt-7'>
+    return <div id='resume' className='flex flex-col gap-3 py-20 center-element -scroll-mt-5'>
         <SectionHeader
             title='Resume'
             description='My technical toolkit, development workflow, and learning journey'
@@ -102,16 +103,17 @@ const Resume = () => {
                     })
                 }
             </div>
-            {/* <Loader /> */}
             {
                 (categoryId !== 3) && <div className='md:grid grid-cols-3 gap-10 w-[60%] max-sm:flex max-sm:flex-col max-sm:gap-3'>
                     {
-                        category.map(({ id, icon_name, name, isHovered }) => {
+                        category.map(({ id, icon_name, name, isHovered, small_screen}) => {
                             return <div key={id}
                             onMouseEnter={() => whileMouseHovered(id, "enter")}
                             onMouseLeave={() => whileMouseHovered(id, "leave")}
                                 style={{ borderColor: pickedColor, backgroundColor : isHovered ? pickedColor : "#1B1E27" }}
-                                className='relative flex gap-2 px-4 py-[15px] rounded-md flex-center bg-main-card bg-red-items border group hover:bg-dark-2 cursor-pointer transition duration-300 m'>
+                                className={cn('relative flex gap-2 px-4 py-[15px] rounded-md flex-center bg-main-card bg-red-items border group hover:bg-dark-2 cursor-pointer transition duration-300',
+                                    small_screen && "md:hidden"
+                                )}>
                                 <div
                                     style={{ backgroundColor: pickedColor }}
                                     className='absolute p-2 transition duration-300 -translate-y-1/2 rounded-md top-1/2 -left-4 group-hover:text-dark-2 group-hover:bg-main-card'>
