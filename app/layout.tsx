@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import MobileMenuProvider from "@/providers/MobileMenuProvider";
-import LoaderProvider from "@/providers/LoaderProvider";
 import ModalProvider from "@/providers/ProjectModalProvider";
 import ThemeProvider from "@/providers/ThemeProvider";
 import ColorPickerProvider from "@/providers/ColorPickerProvider";
