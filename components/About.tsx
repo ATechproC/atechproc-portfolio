@@ -3,7 +3,7 @@ import Image from "next/image"
 import SectionHeader from "./SectionHeader";
 
 const About = () => {
-    return <div id="about" className="center-element md:scroll-mt-16 max-sm:scroll-mt-10">
+    return <div id="about" className="center-element md:scroll-mt-16 max-sm:scroll-mt-14">
         <SectionHeader title="About" description="Passionate about creating digital solutions that solve real-world problems" />
         <div className="gap-10 mx-auto flex-items max-sm:flex-col max-sm:text-center max-sm:gap-12 max-sm:mt-5">
             <div className="w-[30%] max-sm:h-[260px]">

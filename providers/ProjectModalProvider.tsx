@@ -1,6 +1,6 @@
 "use client";
 
-import { ModalProps, TechStackProps } from "@/types";
+import { ModalProps, TechStackProps } from "@/public/types";
 import { StaticImageData } from "next/image";
 import { createContext, useContext, useState } from "react";
 

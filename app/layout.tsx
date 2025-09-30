@@ -8,6 +8,9 @@ import LinksStateProvider from "@/providers/LinksStateProvider";
 
 export const metadata: Metadata = {
   title: "A_Techpro_C",
+  icons: [
+    { url: "/A_Techpro_C.png" }
+  ],
   description: "A_Techpro_C is a front-end developer skilled in React and JavaScript, exploring data engineering to build responsive and data-driven web apps.",
 };
 

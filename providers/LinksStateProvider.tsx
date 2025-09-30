@@ -2,7 +2,7 @@
 
 import { links,  } from '@/constants'
 import linksReducer from '@/reducers/linksReducer'
-import { LinksStateProviderProps } from '@/types';
+import { LinksStateProviderProps } from '@/public/types';
 import React, { useContext, useReducer } from 'react'
 import { createContext } from 'react'
 

@@ -8,7 +8,7 @@ import { projects } from "@/data";
 import Modal from "./ProjectModal";
 import ProjectButton from "./ProjectButton";
 import { useColorPicker } from "@/providers/ColorPickerProvider";
-import { ProjectsCardProps } from "@/types";
+import { ProjectsCardProps } from "@/public/types";
 
 const ProjectsCard = ({ project }: ProjectsCardProps) => {
 

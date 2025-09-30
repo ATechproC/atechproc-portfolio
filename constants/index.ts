@@ -3,7 +3,7 @@ import atechpro from "../public/A_Techpro_C.png";
 import spinner from "../public/spinner.svg";
 import moon_icon from '../public/moon.png'
 import sun_icon from '../public/sun_icon.png'
-import { CategoryProps, ColorsProps, HomeLinksProps, LinksProps, SkillsProps } from "@/types";
+import { CategoryProps, ColorsProps, HomeLinksProps, LinksProps, SkillsProps } from "@/public/types";
 
 
 export const assets = {
@@ -55,12 +55,24 @@ export const skills : SkillsProps[] = [
     },
     {
         "id": 6,
+        "icon_name": "redux",
+        "name": "Redux",
+        "isHovered" : false
+    },
+    {
+        "id": 7,
+        "icon_name": "mui",
+        "name": "MUI",
+        "isHovered" : false
+    },
+    {
+        "id": 8,
         "icon_name": "nextdotjs",
         "name": "Next.js",
         "isHovered" : false
     },
     {
-        "id": 7,
+        "id": 9,
         "icon_name": "tailwindcss",
         "name": "Tailwind CSS",
         "isHovered" : false
@@ -94,24 +106,18 @@ export const tools : SkillsProps[] = [
     },
     {
         "id": 3,
-        "icon_name": "chatgpt",
-        "name": "ChatGPT",
-        "isHovered" : false
-    },
-    {
-        "id": 4,
         "icon_name": "postman",
         "name": "Postman",
         "isHovered" : false
     },
     {
-        "id": 5,
+        "id": 4,
         "icon_name": "npm",
         "name": "NPM",
         "isHovered" : false
     },
     {
-        "id": 6,
+        "id": 5,
         "icon_name": "figma",
         "name": "Figma",
         "isHovered" : false

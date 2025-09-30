@@ -1,6 +1,6 @@
 "use client";
 
-import { ThemeProps } from '@/types';
+import { ThemeProps } from '@/public/types';
 import React, { useContext, useState } from 'react'
 
 import { createContext } from 'react';

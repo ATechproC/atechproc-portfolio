@@ -7,7 +7,7 @@ import { FaBookOpen } from "react-icons/fa6";
 import { useEffect, useReducer, useState } from 'react';
 import { useColorPicker } from '@/providers/ColorPickerProvider';
 import selectedItemsReducer from '@/reducers/selectedItemsReducer';
-import { SkillsProps } from '@/types';
+import { SkillsProps } from '@/public/types';
 
 interface EducationProps {
     title: string;

@@ -51,18 +51,18 @@ const Home = () => {
                 }
             </div>
             <div className='gap-3 mt-4 max-sm:gap-2 flex-items max-sm:flex-col'>
-                <button
+                <a href='#projects'
                 onMouseEnter={() => setIsButtonHovered(true)}
                 onMouseLeave={() => setIsButtonHovered(false)}
                     style={{ backgroundColor: pickedColor, boxShadow : isButtonHovered ? `0 0 6px ${pickedColor}` : "", transition : "box-shadow 0.3s ease" }}
                     className='flex text-white gap-2 px-3 py-2 text-sm rounded-xl hover:bg-[rgb(112_54_235)] transition-colors flex-items'>
                     View My Work <FaArrowRight className='mt-[2px]' />
-                </button>
-                <button
+                </a>
+                <a href='#contact'
                     style={{ color: isDark ? pickedColor : "#fff", backgroundColor : !isDark ? pickedColor : "#fff"}}
                     className='flex gap-2 px-3 py-2 text-[15px] font-bold rounded-xl flex-items hover:shadow-[0_0_3px_#fff] transition duration-200 max-sm:px-7'>
                     Contact Me
-                </button>
+                </a>
             </div>
         </div>
         <div className='relative w-[250px] h-[250px] max-sm:mb-5 up-down'>

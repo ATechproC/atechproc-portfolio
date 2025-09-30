@@ -1,6 +1,6 @@
 "use client";
 
-import { MobileMenuProps } from '@/types';
+import { MobileMenuProps } from '@/public/types';
 import React, { useContext, useState } from 'react'
 import { createContext } from 'react';
 

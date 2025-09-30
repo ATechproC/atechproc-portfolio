@@ -9,7 +9,7 @@ import todo from "../public/todo_list2.jpg"
 import weatherApp from '../public/weather.png'
 import portfolio from "../public/ATechproC.png"
 import prayerTimeApp from "../public/time-prayers.png"
-import { ProjectsProps } from '@/types';
+import { ProjectsProps } from '@/public/types';
 
 
 export const projects: ProjectsProps[] = [
@@ -75,8 +75,6 @@ export const projects: ProjectsProps[] = [
         techStack: [
             { id: 1, name: "nextdotjs" },
             { id: 2, name: "typescript" },
-            { id: 3, name: "liveblocks" },
-            { id: 4, name: "lexical" },
             { id: 5, name: "shadcn" },
             { id: 6, name: "tailwindcss" },
         ],
@@ -89,7 +87,7 @@ export const projects: ProjectsProps[] = [
         modal_desc:
             "An admin dashboard that provides data visualization, analytics, and management tools. Built with React, Chart.js, and TailwindCSS to deliver clear insights and responsive design.",
         gitHub: "https://github.com/ATechproC/dashboard-admin",
-        demo: "https://zoom-app-puce.vercel.app/",
+        demo: "https://euphonious-cupcake-3d6ab7.netlify.app/",
         techStack: [
             { id: 1, name: "react" },
             { id: 2, name: "typescript" },
@@ -126,8 +124,59 @@ export const projects: ProjectsProps[] = [
             { id: 3, name: "javascript" },
         ],
     },
+
     {
         id: 8,
+        source: weatherApp,
+        title: "Weather App",
+        description: "Real-time weather forecast application",
+        modal_desc:
+            "A weather application that fetches real-time data using an API request. Features multi-language support with i18n for English and Arabic, and allows users to select cities or countries to view localized forecasts. Displays current temperature, conditions, and min/max values with a clean and responsive UI.",
+        gitHub: "https://github.com/ATechproC/weather-app",
+        demo: "https://shimmering-donut-2ab533.netlify.app/",
+        techStack: [
+            { id: 1, name: "react" },
+            { id: 3, name: "tailwindcss" },
+            { id: 4, name: "redux" },
+            { id: 5, name: "i18next" },
+            { id: 6, name: "axios" },
+            { id: 7, name: "mui" },
+        ],
+    },
+
+    {
+        id: 9,
+        source: prayerTimeApp,
+        title: "Prayer Times App",
+        description: "Islamic prayer times application",
+        modal_desc: "A prayer times application that fetches real-time prayer schedules using API requests with Axios. Features city selection to display accurate prayer times for specific locations. Shows all daily prayers (Fajr, Sunrise, Dhuhr, Asr, Maghrib, Isha) with a clean, user-friendly interface and responsive design.",
+        gitHub: "https://github.com/ATechproC/time-prayers",
+        demo: "https://time-prayers.vercel.app/",
+        techStack: [
+            { id: 1, name: "html5" },
+            { id: 2, name: "css3" },
+            { id: 3, name: "javascript" },
+            { id: 4, name: "axios" },
+        ],
+    },
+    {
+        id: 10,
+        source: todo,
+        title: "Todo List App",
+        description: "Task management application",
+        modal_desc:
+            "A simple and interactive Todo List application that allows users to add, edit, and delete tasks. Built with React for dynamic updates and CSS for styling, providing a clean and user-friendly task management experience.",
+        gitHub: "https://github.com/ATechproC/todo-list",
+        demo: "https://dreamy-gumdrop-16ad08.netlify.app/",
+        techStack: [
+            { id: 1, name: "react" },
+            { id: 2, name: "css3" },
+            { id: 3, name: "mui" },
+        ],
+    },
+
+    {
+        id: 11,
         source: restaurant,
         title: "Restaurant Ovibes",
         description: "Restaurant Ovibes - Best In The City",
@@ -140,54 +189,5 @@ export const projects: ProjectsProps[] = [
             { id: 2, name: "css3" },
         ],
     },
-    
-    {
-        id: 9,
-        source: weatherApp, 
-        title: "Weather App",
-        description: "Real-time weather forecast application",
-        modal_desc:
-            "A weather application that fetches real-time data using an API request. Features multi-language support with i18n for English and Arabic, and allows users to select cities or countries to view localized forecasts. Displays current temperature, conditions, and min/max values with a clean and responsive UI.",
-        gitHub: "https://github.com/ATechproC/weather-app", 
-        demo: "https://shimmering-donut-2ab533.netlify.app/", 
-        techStack: [
-            { id: 1, name: "react" },
-            { id: 3, name: "tailwindcss" },
-            { id: 4, name: "redux" }, 
-            { id: 5, name: "i18next" }, 
-            { id: 6, name: "axios" }, 
-            { id: 7, name: "mui" }, 
-        ],
-    },
-    {
-        id: 10,
-        source: todo, 
-        title: "Todo List App",
-        description: "Task management application",
-        modal_desc:
-            "A simple and interactive Todo List application that allows users to add, edit, and delete tasks. Built with React for dynamic updates and CSS for styling, providing a clean and user-friendly task management experience.",
-        gitHub: "https://github.com/ATechproC/todo-list", 
-        demo: "https://dreamy-gumdrop-16ad08.netlify.app/", 
-        techStack: [
-            { id: 1, name: "react" },
-            { id: 2, name: "css3" },
-            { id: 3, name: "mui" },
-        ],
-    },
-    {
-        id: 11,
-        source: prayerTimeApp, 
-        title: "Prayer Times App",
-        description: "Islamic prayer times application",
-        modal_desc: "A prayer times application that fetches real-time prayer schedules using API requests with Axios. Features city selection to display accurate prayer times for specific locations. Shows all daily prayers (Fajr, Sunrise, Dhuhr, Asr, Maghrib, Isha) with a clean, user-friendly interface and responsive design.",
-        gitHub: "https://github.com/ATechproC/time-prayers",
-        demo: "https://time-prayers.vercel.app/", 
-        techStack: [
-            { id: 1, name: "html5" },
-            { id: 2, name: "css3" },
-            { id: 3, name: "javascript" },
-            { id: 4, name: "axios" },
-        ],
-    }
 ];
 

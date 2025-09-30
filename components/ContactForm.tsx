@@ -94,7 +94,7 @@ const ContactForm = () => {
             {/* ✅ Show result message */}
             {result && (
                 <p
-                    className={`mt-4 text-center font-medium ${isSuccess ? "text-green-400" : "text-red-400"
+                    className={`mt-4 text-center font-medium ${isSuccess ? "text-white" : "text-red-400"
                         }`}
                 >
                     {result}

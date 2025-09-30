@@ -2,7 +2,7 @@
 
 import { useColorPicker } from '@/providers/ColorPickerProvider';
 import { useTheme } from '@/providers/ThemeProvider';
-import { SectionHeaderProps } from '@/types';
+import { SectionHeaderProps } from '@/public/types';
 import React from 'react'
 import { FaStar } from "react-icons/fa6";
 

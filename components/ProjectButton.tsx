@@ -2,7 +2,7 @@
 
 import { useColorPicker } from "@/providers/ColorPickerProvider";
 import { useModal } from "@/providers/ProjectModalProvider";
-import { ProjectButtonProps } from "@/types";
+import { ProjectButtonProps } from "@/public/types";
 
 
 const ProjectButton = ({title, modalDesc,source, techStack} : ProjectButtonProps) => {
