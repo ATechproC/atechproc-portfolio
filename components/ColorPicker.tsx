@@ -35,7 +35,7 @@ const ColorPicker = () => {
     if (isColorPickerOpen)
 
         return <>
-        <div className='fixed z-50 p-3 rounded-md max-sm:right-20 max-sm:top-12 dark:right-48 top-16 right-52 dark:bg-white bg-main-card '>
+        <div className='fixed z-50 p-3 rounded-md max-sm:dark:right-20 max-sm:right-20 max-sm:top-12 dark:right-48 top-16 right-52 dark:bg-white bg-main-card '>
             <FaTimes
                 onClick={() => setIsColorPickerOpen(!isColorPickerOpen)}
                 style={{ color: pickedColor }}
