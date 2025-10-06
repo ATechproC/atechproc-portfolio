@@ -26,7 +26,7 @@ const ProjectsCard = ({ project }: ProjectsCardProps) => {
                     className="object-cover w-full h-full"
                 />
             </div>
-            <div className="absolute top-0 left-0 w-full h-full p-5 transition duration-300 rounded-md opacity-0 bg-project group-hover/parent:opacity-100">
+            <div className="absolute top-0 left-0 w-full h-full p-5 transition duration-300 rounded-md md:opacity-0 bg-project group-hover/parent:opacity-100">
                 <div className="relative -translate-y-1/2 top-1/2">
                     <p 
                     style={{color : pickedColor}}
@@ -37,7 +37,7 @@ const ProjectsCard = ({ project }: ProjectsCardProps) => {
                     <p className="font-semibold md:text-[20px] text-white max-sm:text-[17px]">
                         {description}
                     </p>
-                    <div className="hidden gap-3 mt-4 flex-items group-hover/parent:flex">
+                    <div className="gap-3 mt-4 md:hidden flex-items group-hover/parent:flex">
                         <a
                             target="_blank"
                             href={gitHub}
