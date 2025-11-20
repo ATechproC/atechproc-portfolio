@@ -159,8 +159,8 @@ export const categorySkills: CategoryProps[] = [
 ]
 
 export const colors  : ColorsProps[] = [
-    { "id": 9, "color": "#f9a90e", isClicked : false },
-    { "id": 1, "color": "#32e6e2", isClicked : true },
+    { "id": 9, "color": "#f9a90e", isClicked : true },
+    { "id": 1, "color": "#32e6e2", isClicked : false },
     { "id": 2, "color": "#ff742e", isClicked : false },
     { "id": 3, "color": "#0e78f9", isClicked : false },
     { "id": 4, "color": "#793aff", isClicked : false },
