@@ -159,13 +159,13 @@ export const categorySkills: CategoryProps[] = [
 ]
 
 export const colors  : ColorsProps[] = [
-    { "id": 9, "color": "#f9a90e", isClicked : true },
-    { "id": 1, "color": "#32e6e2", isClicked : false },
-    { "id": 2, "color": "#ff742e", isClicked : false },
-    { "id": 3, "color": "#0e78f9", isClicked : false },
-    { "id": 4, "color": "#793aff", isClicked : false },
+    { "id": 1, "color": "#f9a90e", isClicked : true },
+    { "id": 2, "color": "#32e6e2", isClicked : false },
+    { "id": 3, "color": "#ff742e", isClicked : false },
+    { "id": 4, "color": "#0e78f9", isClicked : false },
+    { "id": 5, "color": "#793aff", isClicked : false },
     { "id": 6, "color": "#e91e63", isClicked : false },
-    { "id": 8, "color": "#f05a22", isClicked : false },
+    { "id": 7, "color": "#f05a22", isClicked : false },
 ]
 
 export const homeLinks : HomeLinksProps[] = [
