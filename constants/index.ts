@@ -162,10 +162,10 @@ export const colors  : ColorsProps[] = [
     { "id": 1, "color": "#32e6e2", isClicked : false },
     { "id": 2, "color": "#ff742e", isClicked : false },
     { "id": 3, "color": "#0e78f9", isClicked : false },
-    { "id": 4, "color": "#793aff", isClicked : false },
+    { "id": 4, "color": "#793aff", isClicked : true },
     { "id": 5, "color": "#e91e63", isClicked : false },
     { "id": 6, "color": "#f05a22", isClicked : false },
-    { "id": 7, "color": "#f9a90e", isClicked : true },
+    { "id": 7, "color": "#f9a90e", isClicked : false },
 ]
 
 export const homeLinks : HomeLinksProps[] = [
