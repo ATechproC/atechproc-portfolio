@@ -177,6 +177,6 @@ export const homeLinks : HomeLinksProps[] = [
     {
         "id" : 2,
         "iconName" : "linkedIn",
-        "link" : "https://www.linkedin.com/in/anass-choraichi-80a403267/",
+        "link" : "https://www.linkedin.com/in/a-techpro-c-80a403267/",
     }
 ]
