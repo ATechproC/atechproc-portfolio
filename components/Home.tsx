@@ -24,17 +24,13 @@ const Home = () => {
             <p
                 style={{ color: pickedColor, textShadow: isDark ? `0 0px 10px ${pickedColor}` : "" }}
                 className='relative max-sm:mx-auto text-[25px] max-sm:text-[20px] whitespace-nowrap text-center w-fit font-medium'>
-                Front-end Web Developer
+                Web Developer
                 <span
                     style={{ backgroundColor: pickedColor, boxShadow: `0 0 5px ${pickedColor}` }}
                     className='absolute bottom-0 left-0 w-[100%]  h-[2px]' />
             </p>
             <p className='mt-5 font-semibold max-sm:hidden dark:text-dark-4 text-sm/1 text-main-light'>
-                &nbsp;&nbsp;&nbsp;As a front-end developer, I specialize in creating responsive and performant web
-                applications using modern JavaScript and React. My curiosity drives me beyond the interface,
-                and I'm currently exploring the world of data engineering to understand how to better manage,
-                process, and visualize data from the ground up.
-                I'm always eager to learn new technologies and tackle challenging projects.
+                &nbsp;&nbsp;&nbsp;I am a Full-Stack Developer with 3+ years of experience in creating scalable and high-performance web applications. I specialize in React.js for crafting modern, responsive user interfaces and utilize Node.js with Express.js and Spring Boot for building robust backends. I take pride in writing clean, maintainable code and delivering digital solutions that not only meet client expectations but also drive business success. One of my notable projects includes a comprehensive e-commerce platform featuring secure REST APIs and an intuitive frontend. I thrive on challenges and am always eager to collaborate on projects that push boundaries. If you need a reliable developer who can bring your vision to life, let's connect and discuss how we can achieve your goals together.
             </p>
             <p className='mt-5 font-semibold md:hidden text-start dark:text-dark-4 text-sm/1'>
                 I build responsive, high-performance web apps with JavaScript and React.
